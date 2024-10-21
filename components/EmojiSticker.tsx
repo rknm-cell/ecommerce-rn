@@ -53,7 +53,7 @@ export default function EmojiSticker({ imageSize, stickerSource }: Props) {
       <GestureDetector gesture={doubleTap}>
 
         <Animated.Image
-          source={stickerSource}
+          source={require(stickerSource)}
           resizeMode="contain"
           style={[imageStyle, { width: imageSize, height: imageSize }]}
           />
